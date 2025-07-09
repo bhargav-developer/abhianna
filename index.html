@@ -43,24 +43,23 @@
   </div>
 
   <script>
-    function shareSite() {
-      const shareData = {
-        title: 'Subscribe & Win a Ayodhya Ram Trip!',
-        text: "
-if you didn't Subscribe to our channel and share , You will definitely face back luck for 1 year
+  function shareSite() {
+    const shareData = {
+      title: 'Subscribe & Win a Ayodhya Ram Trip!',
+      text: `If you didn't subscribe to our channel and share, you might face bad luck for 1 year!
 
-Subscribe to this channel and share with 5 people to win a free Ayodhya Ram!",
-        url: window.location.href
-      };
+Subscribe to this channel and share with 5 people to win a free Ayodhya Ram trip!`,
+      url: window.location.href
+    };
 
-      if (navigator.share) {
-        navigator.share(shareData)
-          .then(() => console.log('Link shared successfully!'))
-          .catch(console.error);
-      } else {
-        alert("Sharing not supported on this browser. Copy the link: " + window.location.href);
-      }
+    if (navigator.share) {
+      navigator.share(shareData)
+        .then(() => console.log('Link shared successfully!'))
+        .catch(console.error);
+    } else {
+      alert("Sharing not supported on this browser. Copy the link: " + window.location.href);
     }
-  </script>
+  }
+</script>
 </body>
 </html>
